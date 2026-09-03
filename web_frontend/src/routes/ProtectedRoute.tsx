@@ -5,7 +5,7 @@ interface Props{
     children: React.ReactNode;
 }
 export default function ProtectedRoute({children}:Props){
-    const {loading, isAuthenticated} = useAuth;
+    const {loading, isAuthentcated} = useAuth();
     if(loading){
         return(
             <div className="flex min-h-screen items-center justify-center">
@@ -13,7 +13,8 @@ export default function ProtectedRoute({children}:Props){
             </div>
         );
     }
-    if(!isAuthenticated){
-        
+    if(!isAuthentcated){
+        return <Navigate to="/" replace/>
     }
+    return <>{children}</>
 }
