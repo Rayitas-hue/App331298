@@ -6,13 +6,13 @@ interface Props{
     children: ReactNode;
 }
 export default function publicRoute({children}:Props){
-    const{loading, isAuthenticated} = useAuth();
+    const{loading, isAuthentcated} = useAuth();
     if(loading){
         return(
             <div className="flex min-h-screen items-center justify-center">Cargando...</div>
         );
     }
-    if(isAuthenticated){
+    if(isAuthentcated){
         return <Navigate to="/dashboard" replace/>
     }
     return <>{children}</>
