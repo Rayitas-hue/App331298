@@ -1,5 +1,4 @@
-const sedeService =
-require('../services/sede.service');
+const sedeService = require('../services/sede.service');
 
 const {
     successResponse,

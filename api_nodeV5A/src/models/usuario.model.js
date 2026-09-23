@@ -12,7 +12,7 @@ const Usuario =sequelize.define('Usuario',{
         allowNull:false
     },
     apellido:{
-         type: DataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull:false
     },
     
@@ -25,7 +25,7 @@ const Usuario =sequelize.define('Usuario',{
         }
     },
     password: {
-         type:DataTypes.STRING,
+        type:DataTypes.STRING,
         allowNull:false
     },
     rol:{

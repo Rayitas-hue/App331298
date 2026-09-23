@@ -14,7 +14,7 @@ const Curso =sequelize.define('Curso',{
         allowNull:false
     },
     descripcion:{
-         type: DataTypes.TEXT,
+        type: DataTypes.TEXT,
         allowNull:false
     },
     estado:{
@@ -22,7 +22,7 @@ const Curso =sequelize.define('Curso',{
         defaultValue:true
     }
 }
-     ,{
+    ,{
     tableName: 'Cursos',
     timestamps: true
 });

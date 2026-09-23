@@ -13,11 +13,11 @@ const Estudiante =sequelize.define('Estudiante',{
         allowNull:false
     },
     grado:{
-         type: DataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull:false
     }
 }
-     ,{
+    ,{
     tableName: 'Estudiantes',
     timestamps: true
 });

@@ -13,11 +13,11 @@ const Docente =sequelize.define('Docente',{
         allowNull:false
     },
     profesion:{
-         type: DataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull:false
     }
 }
-     ,{
+    ,{
     tableName: 'Docentes',
     timestamps: true
 });

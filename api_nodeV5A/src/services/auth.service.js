@@ -31,13 +31,13 @@ const login = async (
         where: { correo }
     });
     if(!usuario){
-         throw new Error('Usuario no existe',correo);
+        throw new Error('Usuario no existe',correo);
     }
     const validPassword = await bcrypt.compare(
         password,usuario.password
     );
     if(!validPassword){
-         throw new Error('Password incorrecto');
+        throw new Error('Password incorrecto');
     }
     const token = generarJWT(usuario);
     return {usuario, token};
