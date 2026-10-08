@@ -14,4 +14,4 @@ sequelize.sync()
             console.log(`Servidor corriendo en http://localhost:${PORT}`)
         );
     })
-    .catch(err => console.error('Error DB: ', err))
+    .catch(err => console.error('Error DB: ', err));

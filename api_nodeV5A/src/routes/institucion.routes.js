@@ -24,5 +24,6 @@ router.put('/:id',[
     validarJWT,
     esAdminRole
 ],
-institucionController.actualizar);
+institucionController.actualizar
+);
 module.exports = router;

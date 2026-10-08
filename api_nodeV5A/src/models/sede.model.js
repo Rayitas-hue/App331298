@@ -12,7 +12,7 @@ const Sede =sequelize.define('Sede',{
         allowNull:false
     },
     nit:{
-         type: DataTypes.STRING,
+        type: DataTypes.STRING,
         unique:true
     },
     
@@ -25,11 +25,11 @@ const Sede =sequelize.define('Sede',{
         }
     },
     direccion: {
-         type:DataTypes.STRING,
+        type:DataTypes.STRING,
         allowNull:false
     },
     telefono:{
-         type:DataTypes.STRING,
+        type:DataTypes.STRING,
         allowNull:false
     },
     estado: {

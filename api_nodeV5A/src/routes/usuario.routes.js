@@ -25,4 +25,5 @@ router.put('/:id',[
     esAdminRole
 ],
 usuarioController.actualizar);
+
 module.exports = router;

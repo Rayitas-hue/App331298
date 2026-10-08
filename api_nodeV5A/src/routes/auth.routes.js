@@ -3,7 +3,6 @@ const router = express.Router();
 const authController = require('../controllers/auth.controller');
 const {registerValidator} = require('../validators/auth.validator');
 const {validarCampos} = require('../middlewares/validate.middleware');
-
 const {validarJWT}=require('../middlewares/auth.middleware');
 
 router.post(
@@ -24,7 +23,7 @@ router.get(
     authController.perfil
 );
 
- router.post(
+router.post(
     "/logout",
     authController.logout
 );

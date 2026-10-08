@@ -1,11 +1,6 @@
-const express =
-require('express');
-
-const router =
-express.Router();
-
-const sedeController =
-require('../controllers/sede.controller');
+const express = require('express');
+const router = express.Router();
+const sedeController = require('../controllers/sede.controller');
 
 const {
     validarJWT

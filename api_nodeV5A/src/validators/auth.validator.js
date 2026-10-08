@@ -3,13 +3,13 @@ const registerValidator = [
     body('nombre')
     .notEmpty()
     .withMessage('nombre requerido'),
-     body('apellido')
+    body('apellido')
     .notEmpty()
     .withMessage('apellido requerido'),
-     body('correo')
+    body('correo')
     .isEmail()
     .withMessage('correo inválido'),
-     body('password')
+    body('password')
     .isLength({min: 6})
     .withMessage('Password mínimo 6 caracteres')
 ];
